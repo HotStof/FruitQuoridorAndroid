@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.chted.fruitquoridor.AcceuilActivity"
+    tools:ignore="ExtraText"
+    android:layout_alignParentBottom="true">
+    >
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <ImageView
+        android:id="@+id/titrejeu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image_titre"
+        app:srcCompat="@drawable/titre_quoridor" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/playonlinebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/play_online" />
+
+    <Button
+        android:id="@+id/playvsfriendbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/play_vs_a_friend" />
+
+    <Button
+        android:id="@+id/playvsaibtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/play_vs_ai" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <ImageView
+        android:id="@+id/imagejeu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:contentDescription="@string/image_fond"
+        app:srcCompat="@drawable/fond_quoridor" />
+
+</LinearLayout>

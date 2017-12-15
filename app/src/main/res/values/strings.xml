@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fruit Quoridor</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="play_vs_ai">Play VS. AI</string>
+    <string name="play_vs_a_friend">Play VS. a Friend</string>
+    <string name="play_online">Play Online</string>
+    <string name="image_fond">image fond</string>
+    <string name="image_titre">image titre</string>
+</resources>
