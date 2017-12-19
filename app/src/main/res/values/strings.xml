@@ -10,4 +10,19 @@
     <string name="play_online">Play Online</string>
     <string name="image_fond">image fond</string>
     <string name="image_titre">image titre</string>
+    <string name="deconnection">Deconnection</string>
+    <string name="facebook">Facebook</string>
+    <string name="connection">Connection</string>
+    <string name="my_friends">My Friends</string>
+    <string name="my_games">My Games</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_game">GameActivity</string>
+
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="recherche_d_un_adversaire">Recherche d\'un adversaire ...</string>
+    <string name="waiting_for_opponent">Waiting for Opponent...</string>
+    <string name="select_a_friend">Select a friend</string>
+    <string name="waiting_for_friend_s_response">Waiting for Friend\'s response</string>
 </resources>

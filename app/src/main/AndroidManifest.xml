@@ -19,6 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".GameActivity" />
+        <activity android:name=".OnlineGameActivity" />
+        <activity android:name=".FriendsGameActivity" />
+        <activity android:name=".AIGameActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".MyFriendsActivity" />
+        <activity android:name=".MyGamesActivity"></activity>
     </application>
 
 </manifest>

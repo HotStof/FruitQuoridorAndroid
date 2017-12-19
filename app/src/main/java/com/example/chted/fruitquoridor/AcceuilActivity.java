@@ -1,5 +1,6 @@
 package com.example.chted.fruitquoridor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class AcceuilActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -23,6 +25,10 @@ public class AcceuilActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Button playonlinebtn = (Button) findViewById(R.id.playonlinebtn);
+        Button playvsaibtn = (Button) findViewById(R.id.playvsaibtn);
+        Button playvsfriendbtn = (Button) findViewById(R.id.playvsfriendbtn);
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -31,7 +37,41 @@ public class AcceuilActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        playonlinebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AcceuilActivity.this,OnlineGameActivity.class);
+                startActivity(intent);
+
+            }
+
+        });
+
+        playvsaibtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AcceuilActivity.this,AIGameActivity.class);
+                startActivity(intent);
+
+            }
+
+        });
+
+        playvsfriendbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AcceuilActivity.this,FriendsGameActivity.class);
+                startActivity(intent);
+
+            }
+
+        });
+
+
     }
+
+
 
     @Override
     public void onBackPressed() {
@@ -72,10 +112,16 @@ public class AcceuilActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_profile) {
+            Intent intent = new Intent(AcceuilActivity.this,ProfileActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_games) {
+            Intent intent = new Intent(AcceuilActivity.this,MyGamesActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_friends) {
+            Intent intent = new Intent(AcceuilActivity.this,MyFriendsActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_fb) {
 
